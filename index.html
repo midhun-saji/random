@@ -22,7 +22,7 @@
 
 let data = "";
 
-fetch('https://randomuser.me/api/')
+fetch('https://randomuser.me/api/?results=10')
     .then(response => response.json())
     .then(result => {
         data = result.results;
